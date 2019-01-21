@@ -1,0 +1,87 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+}
+
+
+#sideBarContainer {
+  margin: auto;
+  width: 100vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: black;
+  background-color: #f9f9f9;
+  text-align: center;
+  min-height: 20vh;
+}
+
+#sideBarResults {
+  display: grid;
+  grid-gap: 3px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: white;
+  padding: 2% 3% 1% 4%;
+  max-height: 15vh;
+  overflow: scroll;
+}
+
+.sideBarItem {
+  text-align: center;
+  background-color: #ddccff;
+  list-style-type: none;
+  max-width: 15vw;
+  color: black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media screen and (max-width: 780px) {
+
+  .searchBar{
+    margin: auto;
+  }
+
+  #sbResults {
+    grid-template-columns: 1fr;
+    max-height: 15vh;
+  }
+
+  .sbItem {
+    padding: 2%;
+    max-width: 40vw;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  .App {
+    display: grid;
+    grid-template-rows: 1fr 1.5fr;
+  }
+
+  #sideBarContainer {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+  }
+
+  #sbResults {
+    display: grid;
+    grid-gap: 1px;
+    grid-template-columns: 1fr;
+    background-color: #f5f4f7;
+    padding: 2% 3% 1% 3%;
+    max-height: 20vh;
+    overflow: scroll;
+  }
+
+  .sbItem {
+    padding: 2%;
+    max-width: 100vw;
+  }
+
+}
